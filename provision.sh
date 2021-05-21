@@ -46,7 +46,9 @@ docker-php-ext-enable pdo_sqlsrv
 pecl install xdebug
 docker-php-ext-enable xdebug
 
-printf '%s\n' 'file_uploads = Off
+printf '%s\n' '# php.ini-file
+# Uploads are allowed for now.
+# file_uploads = Off
 allow_url_fopen = Off
 
 [Session]
